@@ -1,0 +1,483 @@
+/*#### Styles project Nemium A ####*/
+:root {
+  --black40: #000000;
+  --gray30: #212121;
+  --gray20: #212429;
+  --gray10: #616161;
+  --barra9: #424242;
+  --white5: #FFFFFF;
+  --back-groundPre: #FEC62E;
+  --yellow4: #FAFA04;
+  --debug3: #FF0000;
+  --green2: #008000;
+}
+
+body {
+  color: var(--gray30);
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+/*transition for browser*/
+html {
+  scroll-behavior: smooth;
+}
+
+/*Unordered list of project variants*/
+.nav-variants {
+  padding-inline-start: 0;
+  margin-block-end: 32px;
+  margin: auto;
+}
+
+.nav-variants p {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--gray10);
+}
+
+.nav-variants li {
+  list-style: none;
+}
+
+.nav-variants ul li {
+  padding-inline-start: 0;
+  margin-block-end: 12px;
+  line-height: 24px;
+}
+
+/*Class hover*/
+.nav-variants li:hover {
+  background: var(--black40);
+  color: var(--white5);
+  font-weight: bold;
+  border: 3px solid var(--green2);
+}
+
+.nav-variants li:first-child {
+  background: var(--black40);
+  color: var(--white5);
+  font-weight: bold;
+}
+
+
+a {
+  color: var(--gray30);
+}
+
+/*Position header-content*/
+.header {
+  margin-block-start: 20px;
+}
+
+.header-content {
+  padding-inline: 20px;
+}
+
+header {
+  font-size: 14px;
+  color: var(--gray10);
+}
+
+header a {
+  color: var(--gray10);
+  text-decoration: none;
+}
+
+header a:hover {
+  color: var(--white5);
+}
+
+header p {
+  line-height: 16px;
+}
+
+header li {
+  margin-bottom: 10px;
+}
+
+.nav-variants {
+  margin-bottom: 20px;
+}
+
+.nav-content details summary {
+  color: var(--gray10);
+  font-weight: bold;
+  line-height: 24px;
+  outline: 0;
+  margin-block-start: 24px;
+  margin-block-end: 16px;
+  cursor: pointer;
+}
+
+.nav-content a:hover {
+  color: var(--black40);
+  font-weight: bold;
+}
+
+
+/*image background*/
+.hero {
+  background: linear-gradient(to top, rgba(255, 255, 255, .2), transparent), url('../image/background.png');
+  height: 350px;
+}
+
+h1 {
+  font-size: 60px;
+  margin: 64px 0 16px;
+  /*margin-top: 64px;
+  margin-bottom: 16px;*/
+  font-weight: normal;
+}
+
+p {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+hr {
+  margin: 64px 0;
+}
+
+h2 {
+  font-size: 32px;
+  margin: 40px 0;
+  font-weight: normal;
+}
+
+h3 {
+  font-size: 24px;
+  margin: 16px 0 24px;
+  font-weight: normal;
+  position: sticky;
+  top: 0;
+  padding: 6px;
+  background: var(--white5);
+}
+
+/*Background al pre*/
+pre {
+  background: var(--back-groundPre);
+  padding: 40px;
+  font-family: 'Roboto';
+  line-height: 24px;
+}
+
+/*Estilos de blockquote*/
+blockquote {
+  font-size: 24px;
+  margin: 32px 0;
+  padding-left: 16px;
+  line-height: 24px;
+  border-left: 4px solid var(--black40);
+}
+
+blockquote span {
+  color: var(--gray10);
+}
+
+blockquote span::before {
+  content: '-';
+}
+
+
+/*wrapper*/
+.main {
+  /*border: 1px solid red;*/
+  background-color: var(--white5);
+}
+
+.wrapper {
+  width: 902px;
+  margin: auto;
+}
+
+.main-content {
+  background-color: var(--white5);
+}
+
+/*######
+Se crea una clase utiliraria para depurar (debug)
+  ######*/
+.debug {
+  box-shadow: 0 0 0 4px var(--debug3);
+  /*box-shadow: inset 0 0 0 4px red;*/
+  /*outline: 1px solid red;*/
+}
+
+/*Se crea hermano directo para ocultar hr*/
+.section-content+hr {
+  display: none;
+}
+
+.section-content img {
+  margin-top: 40px;
+  max-inline-size: 100%; /* max-width */
+}
+
+/*Se utilizará counter-reset*/
+.section-content {
+  counter-reset: titleList;
+}
+
+/*Incremento al contador*/
+.section-content h3 {
+  counter-increment: titleList;
+  padding-bottom: 4px;
+}
+
+/*Pseudo elementos*/
+.section-content h3::before {
+  /*Se agrega el counter*/
+  content: counter(titleList, decimal) '. ';
+}
+
+.section-content h3::after {
+  content: '';
+  width: auto;
+  height: auto;
+  background: var(--barra9);
+  display: block;
+}
+
+#google-chrome::after {
+  width: 192px;
+  height: 4px;
+}
+
+#visual-studio::after {
+  width: 228px;
+  height: 4px;
+}
+
+#figma::after {
+  width: 93px;
+  height: 4px;
+}
+
+#git-hub::after {
+  width: 100px;
+  height: 4px;
+}
+
+#html::after {
+  width: 171px;
+  height: 4px;
+}
+
+#etiquetas::after {
+  width: 126px;
+  height: 4px;
+}
+
+#dom::after {
+  width: 79px;
+  height: 4px;
+}
+
+#semantica::after {
+  width: 140px;
+  height: 4px;
+}
+
+#atributos::after {
+  width: 124px;
+  height: 4px;
+}
+
+#css::after {
+  width: 70px;
+  height: 4px;
+}
+
+/*Margenes entre sections*/
+.section-content {
+  margin-top: 164px;
+}
+
+/*quita el margen de la sección*/
+.section-content:first-of-type {
+  margin: 0;
+}
+
+.section-content-modelo {
+  margin-top: 164px;
+}
+
+/*Estilos a los h3 de la section 3*/
+.section-content-modelo h3 {
+  margin: 40px 0 16px;
+}
+
+/*Estilo a listas ordenadas*/
+.section-content-modelo ol li {
+  margin-bottom: 16px;
+}
+
+/*Estilo a las listas no ordenadas*/
+.section-content-modelo ul li {
+  margin-bottom: 16px;
+}
+
+.section-content-modelo h2 {
+  margin-top: 40px;
+  margin-bottom: 0;
+}
+
+.section-content-modelo img {
+  margin: 0;
+  max-inline-size: 100%; /* max-width */
+}
+
+/*Styles to slider*/
+/*.slider {
+}*/
+.slider-container {
+  /*block-size: 100px;*/
+  display: block;
+  overflow: auto;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+  font-size: 0;
+}
+
+.video {
+  margin: 0;
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+}
+
+.slider-bullet-list {
+  text-align: center;
+  margin-block-start: 10px;
+}
+
+.slider-bullet {
+  display: inline-block;
+  inline-size: 15px;
+  block-size: 15px;
+  border-radius: 50%;
+  background: var(--gray10);
+}
+
+.slider-bullet:hover {
+  background: var(--black40);
+}
+
+/*Styles form*/
+.form input {
+  inline-size: 100%;
+  border: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 12px 16px;
+  block-size: 48px;
+  color: #424242;
+  border: 1px solid #616161;
+  outline: none;
+  box-sizing: border-box;
+  border-radius: 90px;
+  margin-block-end: 16px;
+}
+
+.form input[type="text"] {
+  inline-size: 100%;
+  display: block;
+}
+
+.form input[type="email"] {
+  inline-size: 100%;
+  margin-block-end: 0;
+}
+
+.button {
+  position: relative;
+  cursor: pointer;
+  background: #000;
+  color: #fff;
+  inline-size: 30%;
+  inset-block-end: 48px;
+  inset-inline-end: -70%;
+  border-radius: 90px;
+  border: none;
+  block-size: 48px;
+  box-sizing: border-box;
+}
+
+/*Styles to footer*/
+.footer {
+  background: #212429;
+  position: relative;
+  z-index: 1;
+}
+
+.footer-content {
+  padding: 48px 0;
+}
+
+.footer-copyright,
+.social-media {
+  color: #ffffff;
+  margin: 0;
+  text-align: center;
+}
+
+.footer-copyright {
+  font-size: 32px;
+  line-height: 37px;
+  margin-bottom: 16px;
+}
+
+.social-media a {
+  margin-inline-end: 16px;
+}
+
+/*## Media Queries y Responsive Design ##*/
+@media screen and (min-width: 1366px) {
+  .hero {
+    block-size: 350px;
+  }
+
+  .header {
+    position: sticky;
+    inset-block-start: -55px;
+    scroll-behavior: smooth;
+  }
+
+  .header-content {
+    position: relative;
+    inset-block-start: 55px;
+    padding-inline: 0;
+    padding-block-start: 0;
+  }
+
+  header {
+    position: absolute;
+    inset-block-start: 0px;
+    inset-inline-start: -208px;
+    inline-size: 200px;
+  }
+
+  .main-content {
+    padding-block-start: 0;
+  }
+
+  h1 {
+    font-size: 60px;
+    margin-block-start: 64px;
+  }
+
+  .section-content:last-child {
+    margin-block-start: 40px;
+    margin-block-end: 80px;
+  }
+}

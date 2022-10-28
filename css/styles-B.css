@@ -1,0 +1,533 @@
+/*#### Styles project Nemium B ####*/
+:root {
+  /*Color nemium B*/
+  --background-B: #251F24;
+  --colorP: #A5A3A5;
+  --preBackg-B: #3A3539;
+  --linkMail: #157EFB;
+  /*--------------*/
+  --black40: #000000;
+  --gray30: #212121;
+  --gray20: #212429;
+  --gray10: #616161;
+  --barra9: #424242;
+  --white5: #FFFFFF;
+  --back-groundPre: #FEC62E;
+  --yellow4: #FAFA04;
+  --debug3: #FF0000;
+  --green2: #008000;
+}
+
+body {
+  background: var(--background-B);
+  color: var(--white5);
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+}
+
+/*transition for browser*/
+html {
+  scroll-behavior: smooth;
+}
+
+/*Unordered list of project variants*/
+.nav-variants {
+  color: var(--white5);
+  padding-inline-start: 0;
+  margin-block-end: 25px;
+  margin: auto;
+}
+
+.nav-variants p {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-size: 14px;
+  line-height: 40px;
+  color: var(--white5);
+}
+
+.nav-variants li {
+  list-style: none;
+}
+
+.nav-variants ul li {
+  color: var(--white5);
+  padding-inline-start: 0;
+  margin-block-end: 12px;
+  line-height: 20px;
+}
+
+/*Class hover*/
+.nav-variants li:hover {
+  background: var(--black40);
+  color: var(--white5);
+  font-weight: bold;
+  border: 3px solid var(--yellow4);
+}
+
+/*Se utilizará la pseudoclase nth-child() para darle diseño
+al segundo elemento de la lista nav-variants*/
+.nav-variants li:nth-child(2) {
+  background: var(--black40);
+  color: var(--white5);
+  font-weight: bold;
+}
+
+a {
+  color: var(--white5);
+}
+
+/*Position header-content*/
+.header {
+  margin-block-start: 20px;
+}
+
+.header-content {
+  padding-inline: 20px;
+}
+
+header {
+  background: var(--background-B);
+  font-size: 14px;
+  color: var(--white5);
+  /*position: absolute;
+  inset-block-start: 0px;
+  inset-inline-start: -195px;
+  inline-size: 188px;*/
+}
+
+header a {
+  color: var(--colorP);
+  text-decoration: none;
+}
+
+header a:hover {
+  color: var(--white5);
+}
+
+header p {
+  color: var(--white5);
+  line-height: 16px;
+  /*margin: -18px;*/
+}
+
+header li {
+  color: var(--colorP);
+  margin-block-end: 10px;
+  /*margin-bottom: 10px;*/
+}
+
+.nav-variants {
+  margin-bottom: 20px;
+}
+
+.nav-content details summary {
+  color: var(--white5);
+  font-weight: bold;
+  line-height: 24px;
+  outline: 0;
+  margin-block-start: 24px;
+  margin-block-end: 16px;
+  cursor: pointer;
+}
+
+.nav-content a:hover {
+  color: var(--white5);
+  font-weight: bold;
+}
+
+
+/*image background*/
+.hero {
+  background: linear-gradient(96.07deg, #314755 30.63%, #26A0DA 102.18%);
+  /*background: linear-gradient(to top, rgba(255, 255, 255, .2), transparent), url('../image/background.png');*/
+  height: 350px;
+}
+
+/*h1, h2, h3 {
+  font-weight: normal;
+}*/
+h1 {
+  font-size: 60px;
+  margin-block-start: 64px;
+  margin-inline-end: 16px;
+  /*margin: 64px 0 16px;*/
+}
+
+h2 {
+  margin-block: 40px;
+  font-size: 32px;
+  /*margin: 40px 0;*/
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 24px;
+  margin-block: 16px;
+  /*margin: 16px 0 24px;*/
+  position: sticky;
+  top: 0;
+  background: var(--white5);
+}
+
+p {
+  color: var(--colorP);
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+hr {
+  margin-block: 40px;
+  border-color: 1px solid rgba(97, 97, 97, 0.2);
+  /*margin: 64px 0;*/
+}
+
+/*Background al pre*/
+pre {
+  background: var(--preBackg-B);
+  padding: 40px;
+  font-family: 'Nunito';
+  line-height: 24px;
+  border-radius: 8px;
+  overflow: auto;
+}
+
+/*Estilos de blockquote*/
+blockquote {
+  background-color: var(--preBackg-B);
+  margin-block-start: 80px;
+  margin-block-end: 63px;
+  border-radius: 8px;
+  font-size: 24px;
+  line-height: 32px;
+  padding-inline-end: 24px;
+  padding-inline-start: 24px;
+  padding-block-start: 24px;
+  padding-block-end: 24px;
+  overflow: auto;
+  /*margin: 32px 0;*/
+  /*padding-left: 16px;*/
+  /*border-left: 4px solid var(--black40);*/
+}
+
+blockquote p {
+  color: var(--white5);
+}
+
+blockquote span {
+  color: var(--white5);
+}
+
+blockquote span::before {
+  content: '-';
+}
+
+
+/*wrapper*/
+.main {
+  background-color: var(--background-B);
+}
+
+.wrapper {
+  max-inline-size: 902px;
+  margin: auto;
+  /*width: 902px;*/
+}
+
+.main-content {
+  background-color: var(--background-B);
+  padding-inline: 16px;
+}
+
+/*######
+Se crea una clase utiliraria para depurar (debug)
+  ######*/
+.debug {
+  box-shadow: 0 0 0 4px var(--debug3);
+  /*box-shadow: inset 0 0 0 4px red;*/
+  /*outline: 1px solid red;*/
+}
+
+/*Se crea hermano directo para ocultar hr*/
+.section-content+hr {
+  display: none;
+}
+
+.section-content img {
+  margin-block-start: 40px;
+  display: block;
+  max-inline-size: 100%;/* max-width */
+  /*margin-top: 40px;*/
+}
+
+/*Se utilizarÃ¡ counter-reset*/
+.section-content {
+  counter-reset: titleList;
+}
+
+/*Incremento al contador*/
+.section-content h3 {
+  counter-increment: titleList;
+  padding-bottom: 4px;
+  background: var(--background-B);
+}
+
+/*Pseudo elementos*/
+.section-content h3::before {
+  /*Se agrega el counter*/
+  content: counter(titleList, decimal) '. ';
+}
+
+/* #### Se elimina la barra ----
+.section-content h3::after {
+  content: '';
+  width: auto;
+  height: auto;
+  background: var(--barra9);
+  display: block;
+}
+
+#google-chrome::after {
+  width: 192px;
+  height: 4px;
+}
+
+#visual-studio::after {
+  width: 228px;
+  height: 4px;
+}
+
+#figma::after {
+  width: 93px;
+  height: 4px;
+}
+
+#git-hub::after {
+  width: 100px;
+  height: 4px;
+}
+
+#html::after {
+  width: 171px;
+  height: 4px;
+}
+
+#etiquetas::after {
+  width: 126px;
+  height: 4px;
+}
+
+#dom::after {
+  width: 79px;
+  height: 4px;
+}
+
+#semantica::after {
+  width: 140px;
+  height: 4px;
+}
+
+#atributos::after {
+  width: 124px;
+  height: 4px;
+}
+
+#css::after {
+  width: 70px;
+  height: 4px;
+}*/
+
+/*Margenes entre sec*/
+.section-content {
+  margin-top: 164px;
+}
+
+/*quita el margen de la sección*/
+.section-content:first-of-type {
+  margin: 0;
+}
+
+.section-content-modelo {
+  margin-top: 164px;
+}
+
+/*Estilos a los h3 de la secciÃ³n 3*/
+.section-content-modelo h3 {
+  background: var(--background-B);
+  margin: 40px 0 16px;
+}
+
+/*Estilo a listas ordenadas*/
+.section-content-modelo ol li {
+  margin-bottom: 16px;
+  color: var(--colorP);
+}
+
+/*Estilo a las listas no ordenadas*/
+.section-content-modelo ul li {
+  margin-bottom: 16px;
+  color: var(--colorP);
+}
+
+.section-content-modelo ul li::marker {
+  color: var(--white5);
+  font-size: 22px;
+}
+
+.section-content-modelo h2 {
+  margin-top: 40px;
+  margin-bottom: 0;
+}
+
+.section-content-modelo img {
+  margin: 0;
+  max-inline-size: 100%; /* max-width */
+}
+
+/*Styles to slider*/
+/*.slider {
+}*/
+.slider-container {
+  /*block-size: 100px;*/
+  display: block;
+  overflow: auto;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+  font-size: 0;
+}
+
+.video {
+  margin: 0;
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+}
+
+.slider-bullet-list {
+  text-align: center;
+  margin-block-start: 10px;
+}
+
+.slider-bullet {
+  display: inline-block;
+  inline-size: 15px;
+  block-size: 15px;
+  border-radius: 50%;
+  background: var(--gray10);
+}
+
+.slider-bullet:hover {
+  background: var(--black40);
+}
+
+/*Style to questions*/
+.section-content-five {
+  margin-block-end: 0;
+}
+
+.section-content-five p {
+  color: var(--white5);
+}
+
+.section-content-five a {
+  color: var(--linkMail);
+}
+
+/*Styles form*/
+.form input {
+  inline-size: 100%;
+  box-sizing: border-box;
+  border: 1px solid var(--white5);
+  background: var(--background-B);
+  border-radius: 8px;
+  padding-inline: 16px;
+  padding-block: 12px;
+  color: var(--white5);
+  font-size: 16px;
+  font-family: 'Nunito', sans-serif;
+  display: block;
+  margin-block-end: 16px;
+  inset-block-start: 0px;
+}
+
+.form input[type="submit"] {
+  background: var(--linkMail);
+  border: none;
+}
+
+.form input::-webkit-input-placeholder {
+  color: var(--colorP);
+}
+
+
+/*Styles to footer*/
+.footer {
+  background: var(--white5);
+  position: relative;
+  z-index: 1;
+}
+
+.footer-content {
+  padding: 48px 0;
+}
+
+.footer-copyright,
+.social-media {
+  color: var(--black40);
+  margin: 0;
+  text-align: center;
+}
+
+.footer-copyright {
+  font-size: 32px;
+  line-height: 37px;
+  margin-bottom: 16px;
+}
+
+.social-media a {
+  margin-inline-end: 16px;
+}
+
+/*## Media Queries y Responsive Design ##*/
+@media screen and (min-width: 1366px) {
+
+  .hero {
+    block-size: 350px;
+  }
+
+  .header {
+    position: sticky;
+    inset-block-start: -55px;
+    scroll-behavior: smooth;
+  }
+
+  .header-content {
+    position: relative;
+    inset-block-start: 55px;
+    padding-inline: 0;
+    padding-block-start: 0;
+  }
+
+  header {
+    position: absolute;
+    inset-block-start: 0;
+    /* top  */
+    inset-inline-start: -208px;
+    /* let */
+    inline-size: 188px;
+    /* width */
+  }
+
+  .main-content {
+    padding-block-start: 0;
+  }
+
+  h1 {
+    font-size: 60px;
+    margin-block-start: 64px;
+  }
+}
